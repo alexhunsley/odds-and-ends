@@ -19,8 +19,8 @@ export IMAGE_NAME=`echo $1 | tr ' ' '_'`
 
 echo Image bane is $IMAGE_NAME
 
-echo "$1" | convert -background SteelBlue3 -pointsize 70 -fill white -gravity east \
-   -page 2732x2048+40+600 text:-'[0]' +repage `echo $IMAGE_NAME.jpg`
+echo "$1" | convert -background SteelBlue3 -pointsize 70 -fill white -gravity center \
+   -page 2732x2048+0+600 text:-'[0]' +repage `echo $IMAGE_NAME.jpg`
 
 
 echo
